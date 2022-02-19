@@ -1,0 +1,27 @@
+"Updater"
+{
+	"Information"
+	{
+		"Version"
+		{
+			"Latest"	"1.0.1"
+		}
+	}
+	"Files"
+	{
+		"Plugin"	"Path_SM/plugins/ban_disconnected.smx"
+		"Plugin"	"Path_SM/plugins/basebans.smx"
+		"Plugin"	"Path_SM/plugins/basecomm.smx"
+		"Plugin"	"Path_SM/plugins/SQLiteBans.smx"
+		"Plugin"	"Path_SM/plugins/SQLiteBans_Discord.smx"
+		"Plugin"	"Path_SM/plugins/updater_sourcemod.smx"
+
+		"Plugin"	"Path_SM/plugins/misc/csgocash.smx"
+		"Plugin"	"Path_SM/plugins/misc/nobots_enforcer.smx"
+		"Plugin"	"Path_SM/plugins/misc/swag.smx"
+		"Plugin"	"Path_SM/plugins/misc/teamsmanagementcommands.smx"
+		"Plugin"	"Path_SM/plugins/misc/teamsmanagementinterface.smx"
+		"Plugin"	"Path_SM/plugins/fix_plugins/ExploitFix_5_28_2021.smx"
+		"Plugin"	"Path_SM/plugins/fix_plugins/FixHintColorMessages.smx"
+	}
+}
