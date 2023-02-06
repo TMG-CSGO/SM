@@ -49,6 +49,7 @@ jobs:
         
       - uses: GuillaumeFalourd/copy-push-files@v1
         with:
-           source_files: /
+           source_files: ${GITHUB_WORKSPACE}
            remote_repository: https://github.com/TMG-CSGO/SM
+           target_branch: WIP
            access_token: ${{ secrets.GITHUB_TOKEN }}
