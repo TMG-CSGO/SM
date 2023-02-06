@@ -46,9 +46,9 @@ jobs:
       - name: Run a multi-line script
         run: echo ${GITHUB_WORKSPACE}
         
-      - name: action-push
-        uses: ludeeus/action-push@0.0.1
-        env:
-          ACTION_MAIL : hajali1383@gmail.com
-          ACTION_NAME : SM
-          ACTION_BRANCH: WIP 
+        
+      - uses: GuillaumeFalourd/copy-push-files@v1
+        with:
+           source_files: /
+           remote_repository: https://github.com/TMG-CSGO/SM
+           access_token: ${{ secrets.ACCESS_TOKEN }}
