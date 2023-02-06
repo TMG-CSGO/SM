@@ -51,4 +51,4 @@ jobs:
         with:
            source_files: /
            remote_repository: https://github.com/TMG-CSGO/SM
-           access_token: ${{ secrets.ACCESS_TOKEN }}
+           access_token: ${{ secrets.GITHUB_TOKEN }}
