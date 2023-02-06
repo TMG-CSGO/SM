@@ -36,7 +36,7 @@ jobs:
         run: ls
         
       - name: Run Updater
-        run: ./updater/update.sh --smdir ../addons/sourcemod --install
+        run: ./updater/update.sh ../addons/sourcemod --smdir --install
 #         
 
       # Runs a set of commands using the runners shell
