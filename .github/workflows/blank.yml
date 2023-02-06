@@ -49,4 +49,6 @@ jobs:
       - name: action-push
         uses: ludeeus/action-push@0.0.1
         env:
+          ACTION_MAIL : hajali1383@gmail.com
+          ACTION_NAME : SM
           ACTION_BRANCH: WIP 
