@@ -30,13 +30,17 @@ jobs:
         with:
           repository: mrc4tt/sourcemod-updater
           path: updater
+          
+      # Runs a single command using the runners shell
+      - name: Download steam.inf
+        run: curl -LJO https://github.com/SteamDatabase/GameTracking-CSGO/blob/master/csgo/steam.inf
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ls
+        run: ls 
         
       - name: Run Updater
-        run: ./updater/update.sh ../addons/sourcemod --smdir --install
+        run: ./updater/update.sh ../addons/sourcemod --install
 #         
 
       # Runs a set of commands using the runners shell
