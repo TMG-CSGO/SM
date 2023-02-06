@@ -47,9 +47,12 @@ jobs:
         run: echo ${GITHUB_WORKSPACE}
         
         
-      - uses: GuillaumeFalourd/copy-push-files@v1
-        with:
-           source_files: ${GITHUB_WORKSPACE}
-           remote_repository: https://github.com/TMG-CSGO/SM
-           target_branch: WIP
-           access_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - run: |
+          date > generated.txt
+          git config user.name alix1383
+          git config user.email hajali1383@gmail.com
+          git checkout WIP
+          git add .
+          git commit -m "generated"
+          git push
