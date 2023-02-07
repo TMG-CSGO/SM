@@ -16,6 +16,6 @@ jobs:
         with:
           server: ${{ secrets.SFTP_HOST_SV_main }}
           username: ${{ secrets.SFTP_USERNAME_SV_main }}
-          password: ${{ secrets.SFTP_PASSWORD_SV_main }}
+          password: ${{ secrets.SFTP_PASSWORD }}
           port: ${{ secrets.PORT }}
-          server-dir: /home/gr/masteraddons/SM
+          server-dir: /home/gr/masteraddons/SM/

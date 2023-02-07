@@ -17,4 +17,5 @@ jobs:
           server: ${{ secrets.SFTP_HOST_SV_Customer }}
           username: ${{ secrets.SFTP_USERNAME_SV_Customer }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          server-dir: /home/gameserver/masteraddons/SM
+          port: ${{ secrets.PORT }}
+          server-dir: /home/gameserver/masteraddons/SM/
