@@ -1,0 +1,29 @@
+name: Download and Upload Sourcemod
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run every day at midnight UTC
+  push:
+    branches:
+      - main
+
+jobs:
+  download-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Download latest version of Sourcemod
+        run: |
+          curl -LJO https://github.com/alliedmodders/sourcemod/releases/latest/download/sourcemod-*.tar.gz
+          tar -xzf sourcemod-*.tar.gz
+          rm sourcemod-*.tar.gz
+
+      - name: Upload to new repository
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dev
+          repository: TMG-CSGO/SM
+          directory: addons/sourcemod
