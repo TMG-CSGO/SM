@@ -16,9 +16,15 @@ jobs:
 
       - name: Download latest version of Sourcemod
         run: |
-          curl -LJO https://sm.alliedmods.net/smdrop/1.11/sourcemod-*-linux.tar.gz
-          tar -xzf sourcemod-*.tar.gz
-          rm sourcemod-*.tar.gz
+          echo Retrieving Current SourceMod
+          echo
+          SM_CURRENT=`curl -s http://www.sourcemod.net/smdrop/1.11/sourcemod-latest-linux`
+          echo Downloads the Current SM Version.
+          echo
+          wget -q "http://www.sourcemod.net/smdrop/1.11/$SM_CURRENT"
+          tar -zxf $SM_CURRENT
+          rm $SM_CURRENT
+
 
       - name: Upload to new repository
         uses: ad-m/github-push-action@master
