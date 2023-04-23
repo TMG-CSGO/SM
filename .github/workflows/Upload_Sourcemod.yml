@@ -16,7 +16,7 @@ jobs:
 
       - name: Download latest version of Sourcemod
         run: |
-          curl -LJO https://github.com/alliedmodders/sourcemod/releases/latest/download/sourcemod-*.tar.gz
+          curl -LJO https://sm.alliedmods.net/smdrop/1.11/sourcemod-*-linux.tar.gz
           tar -xzf sourcemod-*.tar.gz
           rm sourcemod-*.tar.gz
 
