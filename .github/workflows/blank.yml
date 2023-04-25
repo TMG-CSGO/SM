@@ -35,13 +35,13 @@ jobs:
         token: ${{ secrets.ACCESS_TOKEN }}
 
     - name: Download Artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: sourcemod
+        path: addons/sourcemod/
 
     - name: Commit Files
       run: |
-        cd addons/sourcemod/
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Actions"
         git add --all
