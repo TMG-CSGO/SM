@@ -37,7 +37,7 @@ jobs:
     - name: Commit Files
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "GitHub Actions"
         git add addons/sourcemod
         git commit -m "Updated Sourcemod"
         git push
