@@ -22,10 +22,12 @@ jobs:
       with:
         name: sourcemod
         path: |
-         addons/sourcemod/configs/geoip/GeoLite2-City.mmdb
+         addons/sourcemod/configs/geoip/*
+         addons/sourcemod/configs/sql-init-scripts/*
          addons/sourcemod/bin/*
          addons/sourcemod/extensions/*
          addons/sourcemod/gamedata/*
+         addons/sourcemod/translations/*.txt
 
     - name: Clone Repo
       uses: actions/checkout@v2
@@ -45,5 +47,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Actions"
         git add --all
-        git commit -m "Updated Sourcemod"
+        git commit -m "Sourcemod Auto Updater"
         git push
