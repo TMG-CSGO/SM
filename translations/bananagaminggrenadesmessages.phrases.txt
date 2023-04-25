@@ -1,0 +1,110 @@
+// Colors available for use in Chat
+// {default}, {red}, {lightred}, {darkred}, {bluegrey}, {blue}, {darkblue}, {purple}, {yellow}, {green}, {lime}, {grey}, {grey2}
+
+// Cores disponíveis para usar no Chat
+// {default}, {red}, {lightred}, {darkred}, {bluegrey}, {blue}, {darkblue}, {purple}, {yellow}, {green}, {lime}, {grey}, {grey2}
+
+"Phrases"
+{
+	"ThrowMolotovMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {lightred}Молотов"
+		"en"		"{1}{default}{2} {purple}➜ {lightred}Molotov"
+		"pt"		"{1}{default}{2} {purple}➜ {lightred}Molotov"
+		"pt_p"		"{1}{default}{2} {purple}➜ {lightred}Molotov"
+	}
+
+	"ThrowIncMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {lightred}Зажигание"
+		"en"		"{1}{default}{2} {purple}➜ {lightred}Incendiária"
+		"pt"		"{1}{default}{2} {purple}➜ {lightred}Incendiária"
+		"pt_p"		"{1}{default}{2} {purple}➜ {lightred}Incendiária"
+	}
+
+	"ThrowHEMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {darkred}Граната"
+		"en"		"{1}{default}{2} {purple}➜ {darkred}HE"
+		"pt"		"{1}{default}{2} {purple}➜ {darkred}HE"
+		"pt_p"		"{1}{default}{2} {purple}➜ {darkred}HE"
+	}
+
+	"ThrowSmokeMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {green}Дымовую шашку"
+		"en"		"{1}{default}{2} {purple}➜ {green}Smoke"
+		"pt"		"{1}{default}{2} {purple}➜ {green}Smoke"
+		"pt_p"		"{1}{default}{2} {purple}➜ {green}Smoke"
+	}
+
+	"ThrowFlashMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {darkblue}Ослепительную гранату"
+		"en"		"{1}{default}{2} {purple}➜ {darkblue}Flash"
+		"pt"		"{1}{default}{2} {purple}➜ {darkblue}Flash"
+		"pt_p"		"{1}{default}{2} {purple}➜ {darkblue}Flash"
+	}
+
+	"ThrowDecoyMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {default}Декой"
+		"en"		"{1}{default}{2} {purple}➜ {default}Decoy"
+		"pt"		"{1}{default}{2} {purple}➜ {default}Decoy"
+		"pt_p"		"{1}{default}{2} {purple}➜ {default}Decoy"
+	}
+
+	//DETONATE
+
+	"DetonateMolotovIncMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {lightred}начал горение"
+		"en"		"{1}{default}{2} {purple}➜ {lightred}Começou a Arder"
+		"pt"		"{1}{default}{2} {purple}➜ {lightred}Começou a Arder"
+		"pt_p"		"{1}{default}{2} {purple}➜ {lightred}Começou a Arder"
+	}
+
+	"DetonateHEMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {darkred}граната взорвалась"
+		"en"		"{1}{default}{2} {purple}➜ {darkred}HE Explodiu"
+		"pt"		"{1}{default}{2} {purple}➜ {darkred}HE Explodiu"
+		"pt_p"		"{1}{default}{2} {purple}➜ {darkred}HE Explodiu"
+	}
+
+	"DetonateSmokeMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {green}дымовая шашка взорвалась"
+		"en"		"{1}{default}{2} {purple}➜ {green}Smoke Explodiu"
+		"pt"		"{1}{default}{2} {purple}➜ {green}Smoke Explodiu"
+		"pt_p"		"{1}{default}{2} {purple}➜ {green}Smoke Explodiu"
+	}
+
+	"DetonateFlashMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {darkblue}флешка взорвалась"
+		"en"		"{1}{default}{2} {purple}➜ {darkblue}Flash Explodiu"
+		"pt"		"{1}{default}{2} {purple}➜ {darkblue}Flash Explodiu"
+		"pt_p"		"{1}{default}{2} {purple}➜ {darkblue}Flash Explodiu"
+	}
+
+	"DetonateDecoyMessage"
+	{
+		"#format"	"{1:s},{2:N}"
+		"ru"		"{1}{default}{2} {purple}➜ {default}декой взорвался"
+		"en"		"{1}{default}{2} {purple}➜ {default}Decoy Explodiu"
+		"pt"		"{1}{default}{2} {purple}➜ {default}Decoy Explodiu"
+		"pt_p"		"{1}{default}{2} {purple}➜ {default}Decoy Explodiu"
+	}
+}
+

@@ -1,0 +1,398 @@
+"Phrases"
+{
+	//Menu
+	"AdminMenu ScrambleFair"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (fair)"
+		"fr"			"Mélanger équipes (équitables)"
+		"de"			"Teams mischen (fair)"
+	}
+	"AdminMenu ScrambleUnfair"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (unfair)"
+		"fr"			"Mélanger équipes (non équitables)"
+		"de"			"Teams mischen (unfair)"
+	}
+	"AdminMenu ScrambleSpecificTeam"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (specific team)"
+		"fr"			"Mélanger équipes (équipe spécifique)"
+		"de"			"Teams mischen (spezielles Team)"
+	}
+	"AdminMenu SwapTeams" //1.6
+	{
+		"#format"		""
+		"en"			"Swap teams"
+		"fr"			"Échanger équipes"
+		"de"			"Teams wechseln"
+	}
+	//1.5
+	"AdminMenu ScrambleFairInstant"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (fair, instant)"
+		"fr"			"Mélanger équipes (équitables, instant.)"
+		"de"			"Teams mischen (fair und sofort)"
+	}
+	"AdminMenu ScrambleUnfairInstant"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (unfair, instant)"
+		"fr"			"Mélanger équipes (non équitables, instant.)"
+		"de"			"Teams mischen (unfair und sofort)"
+	}
+	"AdminMenu ScrambleSpecificTeamInstant"
+	{
+		"#format"		""
+		"en"			"Teams Scramble (specific team, instant)"
+		"fr"			"Mélanger équipes (équipe spécifique, instant.)"
+		"de"			"Teams mischen (spezielles Team, sofort)"
+	}
+	"AdminMenu SwapTeamsInstant" //1.6
+	{
+		"#format"		""
+		"en"			"Swap teams (instant)"
+		"fr"			"Échanger équipes (instant.)"
+		"de"			"Teams sofort wechseln"
+	}
+	"AdminMenu TeamPrevent"
+	{
+		"#format"		""
+		"en"			"Prevent Teams Management"
+		"fr"			"Prévenir gestion d'équipes"
+		"de"			"Verhindere Team Management"
+	}
+	"AdminMenu TeamCancel"
+	{
+		"#format"		""
+		"en"			"Cancel Teams Management"
+		"fr"			"Annuler gestion d'équipes"
+		"de"			"Team Management abbrechen"
+	}
+	//Menu; since 1.1
+	"AdminMenu ToTeam 15"
+	{
+		"#format"		"{1:s}"
+		"en"			"Player to {1}"
+		"fr"			"Joueur aux {1}"
+		"de"			"Spieler zu {1}"
+	}
+	"AdminMenu ToTeamInstant 15"
+	{
+		"#format"		"{1:s}"
+		"en"			"Player to {1} (instant)"
+		"fr"			"Joueur aux {1} (instant.)"
+		"de"			"Spieler zu {1} (sofort)"
+	}
+	"AdminMenu ToTeamSpec 14" //1.4.0 Spec
+	{
+		"#format"		""
+		"en"			"Player to Specs (instant)"
+		"fr"			"Joueur aux Specs (instant)"
+		"de"			"Spieler zu Spectator (sofort)"
+	}
+	"AdminMenu ChangeTeam 11" //Changed in 1.2
+	{
+		"#format"		""
+		"en"			"Change player's team(swap)"
+		"fr"			"Changer joueur d'équipe(swap)"
+		"de"			"Team des Spielers aendern (wechseln)"
+	}
+	"AdminMenu ChangeTeamInstant 15"
+	{
+		"#format"		""
+		"en"			"Change player's team(swap, instant)"
+		"fr"			"Changer joueur d'équipe(swap, instant.)"
+		"de"			"Team des Spielers aendern (wechseln, sofort)"
+	}
+	"AdminMenu CancelChangeTeam 11" //changed a bit in 1.3
+	{
+		"#format"		""
+		"en"			"Cancel player's team's change"
+		"fr"			"Annuler changement d'équipe de joueur"
+		"de"			"Teamwechsel des Spielers abbrechen"
+	}
+	//Menu; since 1.3
+	"AdminMenu ClanToTeam 15"
+	{
+		"#format"		"{1:s}"
+		"en"			"Clan to {1}"
+		"fr"			"Clan aux {1}"
+		"de"			"Clan zu {1}"
+	}
+	"AdminMenu ClanToTeamInstant 15"
+	{
+		"#format"		"{1:s}"
+		"en"			"Clan to {1} (instant)"
+		"fr"			"Clan aux {1} (instant.)"
+		"de"			"Clan zu {1} (sofort)"
+	}
+	"AdminMenu ClanTeamSpec 14"
+	{
+		"#format"		""
+		"en"			"Clan to Specs"
+		"fr"			"Clan aux Specs"
+		"de"			"Clan zu Spectator"
+	}
+	"AdminMenu ClanChangeTeam 13"
+	{
+		"#format"		""
+		"en"			"Change clan's team(swap)"
+		"fr"			"Changer clan d'équipe(swap)"
+		"de"			"Team von Clan wechseln (wechseln)"
+	}
+	"AdminMenu ClanChangeTeamInstant 15"
+	{
+		"#format"		""
+		"en"			"Change clan's team(swap, instant)"
+		"fr"			"Changer clan d'équipe(swap, instant.)"
+		"de"			"Team von Clan wechseln (wechseln, sofort)"
+	}
+	"AdminMenu ClanCancelChangeTeam 13"
+	{
+		"#format"		""
+		"en"			"Cancel clan's team's change"
+		"fr"			"Annuler changement d'équipe de clan"
+		"de"			"Teamwechsel des Clans abbrechen"
+	}
+	//Verbose : global
+	"ScrambleFair"
+	{
+		"#format"		""
+		"en"			"Teams are going to be scrambled (equally sized teams)."
+		"fr"			"Les équipes seront mélangées (même taille)."
+		"de"			"Teams werden gemischt, damit sie die gleiche Groesse haben."
+	}
+	"ScrambleUnfair"
+	{
+		"#format"		""
+		"en"			"Teams are going to be scrambled (randomly sized teams)."
+		"fr"			"Les équipes seront mélangées (taille des équipes aléatoire)."
+		"de"			"Teams werden gemischt und werden eine zufaellige Groesse erhalten."
+	}
+	"ScrambleSpecificTeam"
+	{
+		"#format"		"{1:s}{2:s}{3:s}{4:s}{5:d}{6:s}"
+		"en"			"Teams are going to be scrambled ({1}{2} {3}with {4}{5} {6}player(s))."
+		"fr"			"Les équipes seront mélangées ({1}{2} {3}avec {4}{5} {6}joueur(s))."
+		"de"			"Teams werden gemischt werden. ({1}{2} {3}mit {4}{5} {6}Spielern."
+	}
+	"SwapTeams" //1.6
+	{
+		"#format"		""
+		"en"			"Teams are going to be swapped."
+		"fr"			"Les équipes seront échangées."
+		"de"			"Teams werden gewechselt werden."
+	}
+		//v. instants
+	"ScrambleFairInstant"
+	{
+		"#format"		""
+		"en"			"Teams are scrambled (equally sized teams)."
+		"fr"			"Les équipes sont mélangées (même taille)."
+		"de"			"Teams wurden gemischt (gleich grosse Teams)."
+	}
+	"ScrambleUnfairInstant"
+	{
+		"#format"		""
+		"en"			"Teams are scrambled (randomly sized teams)."
+		"fr"			"Les équipes sont mélangées (taille des équipes aléatoire)."
+		"de"			"Teams wurden gemischt (zufaellige Groesse)."
+	}
+	"ScrambleSpecificTeamInstant"
+	{
+		"#format"		"{1:s}{2:s}{3:s}{4:s}{5:d}{6:s}"
+		"en"			"Teams are scrambled ({1}{2} {3}with {4}{5} {6}player(s))."
+		"fr"			"Les équipes sont mélangées ({1}{2} {3}avec {4}{5} {6}joueur(s))."
+		"de"			"Teams wurden gemischt ({1}{2} {3}mit {4}{5} {6}Spielern).
+	}
+	"SwapTeamsInstant" //1.6
+	{
+		"#format"		""
+		"en"			"Teams are swapped."
+		"fr"			"Les équipes sont échangées."
+		"de"			"Teams sind gewechselt."
+	}
+	"F_Scramble"
+	{
+		"#format"		""
+		"en"			"Failed Teams Management (another plugin or action has priority)."
+		"fr"			"Échec du mélange des équipes (un autre plugin ou action a priorité)."
+		"de"			"Team Management ist fehlgeschlagen (ein anderes Plugin oder Aktion hat Prioritaet)."
+	}
+	"TeamPrevent"
+	{
+		"#format"		""
+		"en"			"There won't be any teams management for the incoming round start."
+		"fr"			"Il ne va pas y avoir de gestion des équipes pour le prochain début de round."
+		"de"			"Es wird kein Teammanagement fuer den naechsten Rundenstart geben." 
+	}
+	"F_TeamPrevent"
+	{
+		"#format"		""
+		"en"			"Failed to prevent Teams Management (another plugin or action has priority)."
+		"fr"			"Échec de la prévention de la gestion des équipes (un autre plugin ou action a priorité)."
+		"de"			"Verhindern von Team Management ist fehlgeschlagen (ein anderes Plugin oder Aktion hat Prioritaet)."
+	}
+	"TeamCancel"
+	{
+		"#format"		""
+		"en"			"At least one Teams Management has been canceled."
+		"fr"			"Au moins une gestion des équipes a été annulée."
+		"de"			"Mindestens ein Team Management wurde abgebrochen."
+	}
+	"F_TeamCancel"
+	{
+		"#format"		""
+		"en"			"No Teams Management canceled (there might not be any)."
+		"fr"			"Aucun changement d'équipes annulé (il peut ne pas y en avoir)."
+		"de"			"Kein Team Management wurde abgebrochen (moeglicherweise gibt es keins)."
+	}
+	"DisabledOption"
+	{
+		"#format"		""
+		"en"			"This option is currently disabled."
+		"fr"			"Cette option est présentement désactivée."
+		"de"			"Diese Option ist gerade gesperrt."
+	}
+	//Verbose : individual
+	"WillBeToTeam 15" //shortened in 1.3; changed in 1.8 (N-->s)
+	{
+		"#format"		"{1:s}{2:s}{3:s}{4:s}"
+		"en"			"{1}{2} {3}will be {4} next round."
+		"fr"			"{1}{2} {3}sera {4} au prochain tour."
+		"de"			"{1}{2} {3}wird {4} sein in der naechsten Runde."
+	}
+	"IsNowTeam 15" //changed in 1.8 (N-->s)
+	{
+		"#format"		"{1:s}{2:s}{3:s}{4:s}"
+		"en"			"{1}{2} {3}is now {4}."
+		"fr"			"{1}{2} {3}est {4}."
+		"de"			"{1}{2} {3}ist nun {4}."
+	}
+	"IsNowOtherTeam 18" //changed in 1.8 (N-->s)
+	{
+		"#format"		"{1:s}{2:s}{3:s}"
+		"en"			"{1}{2} {3}is team swapped."
+		"fr"			"{1}{2} {3}est changé d'équipe."
+		"de"			"{1}{2} {3}sind nun ausgetauscht."
+	}
+	"TeamChange 11" //shortened and changed in 1.2, 1.3 and 1.5 ; changed in 1.8 (N-->s)
+	{//"should" because if player change before TMI acts, he will be send back to his team
+		"#format"		"{1:s}{2:s}{3:s}"
+		"en"			"{1}{2} {3}should change team next round."
+		"fr"			"{1}{2} {3}devrait changer d'équipe au prochain tour."
+		"de"			"{1}{2} {3}sollte das Team naechste Runde wechseln."
+	}
+	//No need for a TeamChangeInstant; "IsNowTeam 15" should be used
+	"TeamSpec 14" //shortened in 1.3; modified in 1.8 (N-->s)
+	{
+		"#format"		"{1:s}{2:s}{3:s}"
+		"en"			"{1}{2} {3}is now Spectator."
+		"fr"			"{1}{2} {3}est maintenant Spectateur."
+		"de"			"{1}{2} {3}ist nun Spectator."
+	}
+	"F_TeamChange 11" //1.8 added player count
+	{
+		"#format"		"{1:s}{2:d}{3:s}"
+		"en"			"Failed to change {1} players' team for next round (another plugin or action has priority)."
+		"fr"			"Échec du changement de l'équipe de {1} joueurs pour le prochain tour (un autre plugin ou action a priorité)."
+		"de"			"Aendern des Teams von {1} Spielern fehlgeschlagen! (ein anderes Plugin oder Aktion hat Prioritaet)."
+	}
+	"TeamChangeCancel 11" //modified in 1.8 (N-->s)
+	{
+		"#format"		"{1:s}{2:s}{3:s}"
+		"en"			"{1}{2}{3}'s team's change has been canceled."
+		"fr"			"Le changement d'équipe de {1}{2} {3}a été annulé."
+		"de"			"Der Teamwechsel von {1}{2}{3} wurde abgebrochen."
+	}
+	"F_TeamChangeCancel 11"
+	{
+		"#format"		"{1:s}{2:d}{3:s}"
+		"en"			"No individual Teams Management canceled for {1}{2} {3}player (there might not be any)."
+		"fr"			"Aucun changement d'équipe individuel annulé pour {1}{2} {3}joueur (il peut ne pas y en avoir)."
+		"de"			"Es wurde kein individuelles Teams Management fuer {1}{2} {3}Spieler abgebrochen (es gibt wahrscheinlich keins)."
+	}
+	//Verbose : Clan ; since 1.3 ; just talk about the one being transfer; if 0 then a F_
+	"ClanWillBeToTeam 15"
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}{7:s}{8:d}{9:s}{10:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}will be {10} next round."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}seront {10} au prochain tour."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}werden naechste Runde {10} sein."
+	}
+	"ClanToTeam 15"
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}{7:s}{8:d}{9:s}{10:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}are now {10}."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}sont maintenant {10}."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}sind nun {10}."
+	}
+	"ClanTeamSpec 14"
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}{7:s}{8:d}{9:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}are switched to Spectators."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}sont transférés aux Spectateurs."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}wurden zu Spectators gewechselt."
+	}
+	"ClanWillTeamChange 13" //renamed in 1.5
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}will change team next round."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}changeront d'équipe au prochain tour."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}werden das Team wechseln naechste Runde."
+	}
+	"ClanTeamChange 15"
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}are changing team."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}changent d'équipe."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}werden das Team wechseln."
+	}
+	"F_ClanTeamChange 13"
+	{
+		"#format"		""
+		"en"			"No player will change team (another plugin or action has priority)."
+		"fr"			"Aucun joueur ne va changer d'équipe (un autre plugin ou action a priorité)."
+		"de"			"Kein Spieler wird das Team wechseln (ein anderes Plugin oder Aktion hat Prioritaet)."
+	}
+	"ClanTeamChangeCancel 13"
+	{
+		"#format"		"{1:s}{2:d}{3:s}{4:s}{5:s}{6:s}{7:s}{8:d}{9:s}"
+		"en"			"{1}{2} {3}players {4}\"{5}\" {6}out of {7}{8} {9}won't change team anymore."
+		"fr"			"{1}{2} {3}joueurs {4}\"{5}\" {6}sur {7}{8} {9}ne seront plus changés d'équipe."
+		"de"			"{1}{2} {3}Spieler {4}\"{5}\" {6}von {7}{8} {9}werden das Team nicht mehr wechseln."
+	}
+	"F_ClanTeamChangeCancel 13"
+	{
+		"#format"		"{1:s}"
+		"en"			"No team change canceled for \"{1}\" players (there might not be any)."
+		"fr"			"Aucun changement d'équipe annulé pour les joueurs \"{1}\" (il peut ne pas y en avoir)."
+		"de"			"Es wurde kein Team wechsel \"{1}\" Spieler abgebrochen. (Vielleicht gibt es keinen)."
+	}
+	//Since 1.5 : menu rework
+	"AdminMenuCat TMTeam 15"
+	{
+		"#format"		""
+		"en"			"Team"
+		"fr"			"Équipe"
+		"de"			"Team"
+	}
+	"AdminMenuCat TMPlayer 15"
+	{
+		"#format"		""
+		"en"			"Player"
+		"fr"			"Joueur"
+		"de"			"Spieler"
+	}
+	"AdminMenuCat TMClan 15"
+	{
+		"#format"		""
+		"en"			"Clan"
+		"fr"			"Clan"
+		"de"			"Clan"
+	}
+}
