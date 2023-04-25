@@ -21,6 +21,11 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: sourcemod
+        path: |
+         addons/sourcemod/configs/geoip/GeoLite2-City.mmdb
+         addons/sourcemod/bin/*
+         addons/sourcemod/extensions/*
+         addons/sourcemod/gamedata/*
 
     - name: Clone Repo
       uses: actions/checkout@v2
