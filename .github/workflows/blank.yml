@@ -1,8 +1,7 @@
 name: Download and Upload Sourcemod
 on:
   push:
-    branches:
-      - main
+
 
 jobs:
   build:
@@ -13,20 +12,22 @@ jobs:
 
     - name: Download Sourcemod
       run: |
-        curl -LJO https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6934-linux.tar.gz
-        tar -xzf sourcemod-1.11.0-git6934-linux.tar.gz
+        curl -L "https://www.sourcemod.net/latest.php?os=linux&version=1.11" -o sourcemod.tar.gz
+        tar -xzf sourcemod.tar.gz
+        rm -rf cfg
+        rm -rf addons/sourcemod/scripting
 
     - name: Upload Sourcemod
       uses: actions/upload-artifact@v2
       with:
         name: sourcemod
-        path: addons/sourcemod
+        path: /
 
     - name: Clone Repo
       uses: actions/checkout@v2
       with:
         repository: TMG-CSGO/SM
-        ref: main
+        ref: dev
         token: ${{ secrets.ACCESS_TOKEN }}
 
     - name: Download Artifacts
@@ -39,5 +40,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Actions"
         git add --all
+        git branch dev
         git commit -m "Updated Sourcemod"
         git push
