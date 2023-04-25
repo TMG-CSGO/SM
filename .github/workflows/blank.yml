@@ -1,32 +1,43 @@
-name: Download latest SourceMod and upload
-
+name: Download and Upload Sourcemod
 on:
   push:
-  
+    branches:
+      - main
+
 jobs:
-  download_and_upload:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          repository: 'TMG-CSGO/SM'  # Repository to upload to
-          ref: 'main'
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Download latest SourceMod release
-        run: |
+    - name: Download Sourcemod
+      run: |
+        curl -LJO https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6934-linux.tar.gz
+        tar -xzf sourcemod-1.11.0-git6934-linux.tar.gz
 
-          URL="https://www.sourcemod.net/latest.php?os=unix&version=1.11"
-          curl -L $URL -o sourcemod.tar.gz
-          mkdir sourcemod
-          tar -xzf sourcemod.tar.gz -C sourcemod --strip-components 1
+    - name: Upload Sourcemod
+      uses: actions/upload-artifact@v2
+      with:
+        name: sourcemod
+        path: addons/sourcemod
 
-      - name: Upload to repo
-        run: |
-          cp -r sourcemod/* .
-          git config user.name "alix1383"
-          git config user.email "hajali1383@gmail.com"
-          git add .
-          git commit -m "Upload SourceMod $VERSION"
-          git push
+    - name: Clone Repo
+      uses: actions/checkout@v2
+      with:
+        repository: TMG-CSGO/SM
+        ref: main
+        token: ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Download Artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: sourcemod
+
+    - name: Commit Files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add addons/sourcemod
+        git commit -m "Updated Sourcemod"
+        git push
