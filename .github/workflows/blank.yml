@@ -48,9 +48,7 @@ jobs:
 
       - name: Commit Files
         run: |
-          git config --global core.autocrlf input
-
-          git add --renormalize
+          git config core.autocrlf true
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
