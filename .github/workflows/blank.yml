@@ -16,7 +16,7 @@ jobs:
 
       - name: Download Sourcemod
         run: |
-          curl -L "https://www.sourcemod.net/latest.php?os=linux&version=1.11" -o sourcemod.tar.gz
+          curl -L "https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6934-linux.tar.gz" -o sourcemod.tar.gz
           tar -xzf sourcemod.tar.gz
           rm -rf cfg
           rm -rf addons/sourcemod/scripting
