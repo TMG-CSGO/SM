@@ -12,8 +12,8 @@ jobs:
     
       - name: check version of linux Sourcemod
         run: |
-          latest_remote=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
-          local_version=$(curl -sL https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
+          latest_remote=$(curl -L https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
+          local_version=$(curl -L https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
           
           echo "AND"
           echo $latest_remote
