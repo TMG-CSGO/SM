@@ -12,6 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+
+      - name: check version of linux Sourcemod
+        run: |
+          content=$(curl -L wget https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux)
+          echo $content
+
+
+
       - name: Download Sourcemod
         run: |
           curl -L "https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6934-linux.tar.gz" -o sourcemod.tar.gz
