@@ -14,8 +14,8 @@ jobs:
 
       - name: check version of linux Sourcemod
         run: |
-          remote=$(curl -L wget https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux)
-          local=$(curl -L wget https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux)
+          remote=$(curl -L https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux)
+          local=$(curl -L https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux)
 
           if [ $remote -ne $local ]
           then
