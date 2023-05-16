@@ -2,16 +2,26 @@ name: Update Sourcemod
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  update:
+    runs-on: ubuntu-latest 
     steps:
-
-        - name: Download data
-          run: |
-              data=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
-              "MY_DATA=${data}" >> $GITHUB_ENV
-               echo ${{ env.MY_DATA }}
-
-
+    
+      - name: check version of linux Sourcemod
+        run: |
+          latest_remote=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
+          local_version=$(curl -sL https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
+          
+          if [ "$latest_remote" != "$local_version" ]; then
+                echo "New version detected, updating Sourcemod..." > $GITHUB_STATE      
+          else        
+                echo "Latest version already installed." > $GITHUB_STATE  
+          fi
+          
+          if [ $? -ne 0 ]; then
+                echo "Error fetching versions, exiting."
+                exit 1    
+          fi
