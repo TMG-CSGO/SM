@@ -11,4 +11,7 @@ jobs:
         - name: Download data
           run: |
               data=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
-              echo "::set-env name=MY_DATA::${data}"
+              "MY_DATA=${data}" >> $GITHUB_ENV
+              echo "MY_DATA"
+
+
