@@ -7,9 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: check version of linux Sourcemod
         run: |
           remote=$(curl -L https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux)
@@ -18,12 +15,12 @@ jobs:
           if [ $remote -ne $local ]
           then
                   echo "{run_jobs}={true}" >> $GITHUB_STATE
-
           else
                   echo "{run_jobs}={false}" >> $GITHUB_STATE
-
           fi
-
+          
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Download Sourcemod
         run: |
