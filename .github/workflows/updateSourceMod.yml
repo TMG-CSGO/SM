@@ -1,8 +1,6 @@
 name: Update Sourcemod
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   push:
     branches:
       - main
@@ -48,6 +46,7 @@ jobs:
 
       - name: Commit Files
         run: |
+          wget https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux
           git config --local core.autocrlf false
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
