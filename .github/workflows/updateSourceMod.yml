@@ -16,9 +16,9 @@ jobs:
           local_version=$(curl -sL https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
           
           if [ "$latest_remote" != "$local_version" ]; then
-                echo "New version detected, updating Sourcemod..." > $GITHUB_STATE      
+                echo "New version detected, updating Sourcemod..." > $GITHUB_OUTPUT      
           else        
-                echo "Latest version already installed." > $GITHUB_STATE  
+                echo "Latest version already installed." > $GITHUB_OUTPUT
           fi
           
           if [ $? -ne 0 ]; then
