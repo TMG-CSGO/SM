@@ -7,8 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set variable from link
-        run: MY_VAR=$(curl -sS https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux ) 
-        
-      - name: Use variable
-        run: echo "$MY_VAR"
+
+        - name: Download data
+          run: |
+              data=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
+              echo "::set-env name=MY_DATA::${data}"
