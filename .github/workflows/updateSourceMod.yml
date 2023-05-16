@@ -12,6 +12,6 @@ jobs:
           run: |
               data=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
               "MY_DATA=${data}" >> $GITHUB_ENV
-              echo "MY_DATA"
+               echo ${{ env.MY_DATA }}
 
 
