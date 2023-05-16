@@ -11,9 +11,10 @@ jobs:
         run: |
                 remote=$( curl -sL  https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
                 local=$( curl -sL  https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
-    
+                echo $remote
+                echo $local
                 if [ "$remote" != "$local" ]; then
-                        echo "{run_jobs}={true}" > $GITHUB_STATE
-                else        
-                        echo "{run_jobs}={false}" > $GITHUB_STATE
+                         echo $local
+                else
+                         echo $remote
                 fi
