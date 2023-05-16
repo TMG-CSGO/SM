@@ -15,7 +15,12 @@ jobs:
           latest_remote=$(curl -sL https://sm.alliedmods.net/smdrop/1.11/sourcemod-latest-linux )
           local_version=$(curl -sL https://raw.githubusercontent.com/TMG-CSGO/SM/main/sourcemod-latest-linux )
           
-          if [ "$latest_remote" != "$local_version" ]; then
+          echo "AND"
+          echo $latest_remote
+          echo $local_version
+          echo "AND"
+          
+          if [ "$latest_remote" -ne "$local_version" ]; then
                 echo "New version detected, updating Sourcemod..."
           else        
                 echo "Latest version already installed."
