@@ -20,7 +20,7 @@ jobs:
           echo $local_version
           echo "AND"
           
-          if [ "$latest_remote" -ne "$local_version" ]; then
+          if [[ "$latest_remote" != "$local_version" ]]; then
                 echo "New version detected, updating Sourcemod..."
           else        
                 echo "Latest version already installed."
