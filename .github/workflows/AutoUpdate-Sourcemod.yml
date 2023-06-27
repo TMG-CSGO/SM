@@ -69,5 +69,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
-          git commit -m "Sourcemod Auto Updater"
+          git commit -m "Sourcemod Updated to $latest_remote"
           git push
